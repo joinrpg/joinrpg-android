@@ -30,8 +30,7 @@
             android:name="com.vk.sdk.VKServiceActivity"
             android:label="ServiceActivity"
             android:theme="@style/VK.Transparent"/>
-        <activity android:name=".MainActivity"
-            android:theme="@android:style/Theme.DeviceDefault.Light">
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 
