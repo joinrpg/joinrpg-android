@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JoinRPG</string>
+    <string name="login_vk_button">Логин через ВК</string>
+    <string name="login_native_login_hint">Электронная почта</string>
+    <string name="login_password_hint">Пароль</string>
+    <string name="login_native_button">Войти</string>
+    <string name="login_error_messagebox_title">Ошибка</string>
+    <string name="login_error_messagebox_dismiss_button">Закрыть</string>
+    <string name="login_error_login_empty">Электронная почта должна быть заполнена</string>
+    <string name="login_error_password_empty">Пароль не должен быть пустым</string>
+    <string name="main_menu_logout">Выйти</string>
+    <string name="main_menu_logout_confirm_title">Выйти</string>
+    <string name="main_menu_logout_confirm_content">Вы уверены, что хотите выйти?</string>
+    <string name="messagebox_yes">Да</string>
+    <string name="messagebox_no">Нет</string>
+</resources>

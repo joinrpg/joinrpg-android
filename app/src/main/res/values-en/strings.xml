@@ -1,10 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="com_vk_sdk_AppId">6441991</integer>
-
     <string name="app_name">JoinRPG</string>
-
-    <!-- Login activity -->
-    <string name="login_vk_button">VK Sign in</string>
+    <string name="login_vk_button">VK Sign In</string>
     <string name="login_native_login_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="login_native_button">Login</string>
@@ -12,11 +9,9 @@
     <string name="login_error_messagebox_dismiss_button">Dismiss</string>
     <string name="login_error_login_empty">Email field should not be empty</string>
     <string name="login_error_password_empty">Password should not be empty</string>
-    <string name="main_menu_logout">Logout</string>
+    <string name="main_menu_logout">Log Out</string>
     <string name="main_menu_logout_confirm_title">Log Out</string>
     <string name="main_menu_logout_confirm_content">Are you sure?</string>
     <string name="messagebox_yes">Yes</string>
     <string name="messagebox_no">No</string>
-
-
 </resources>
