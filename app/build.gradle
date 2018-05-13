@@ -4,14 +4,18 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+static def getBuildNumber() {
+    return ['sh', '-c', 'git rev-list HEAD | wc -l | tr -d " "'].execute().text.trim() as Integer
+}
+
 android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "ru.joinrpg.android"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode getBuildNumber()
+        versionName "0.1 (" + (getBuildNumber() as String) + ")"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -31,6 +35,7 @@ dependencies {
     implementation 'com.github.kittinunf.fuel:fuel-android:1.12.1'
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
 
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

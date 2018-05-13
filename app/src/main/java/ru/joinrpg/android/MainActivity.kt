@@ -29,6 +29,10 @@ class MainActivity : BaseActivity() {
             return super.onOptionsItemSelected(item)
 
         when (item.itemId) {
+            R.id.main_menu_about -> {
+                onMenuAbout()
+                return true
+            }
             R.id.main_menu_logout -> {
                 onMenuLogout()
                 return true
@@ -36,6 +40,12 @@ class MainActivity : BaseActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    // обработка нажатия на меню About
+    private fun onMenuAbout() {
+        val intent = Intent(this, AboutActivity::class.java)
+        startActivity(intent)
     }
 
     // обработка нажатия на меню логаут

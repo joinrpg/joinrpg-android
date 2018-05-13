@@ -14,4 +14,6 @@
     <string name="main_menu_logout_confirm_content">Вы уверены, что хотите выйти?</string>
     <string name="messagebox_yes">Да</string>
     <string name="messagebox_no">Нет</string>
+    <string name="about_version">Версия:</string>
+    <string name="main_menu_about">О программе</string>
 </resources>

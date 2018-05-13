@@ -14,11 +14,15 @@ class JoinRpgApplication() : Application() {
 
     val networking = Networking()
     var _currentActivity: Activity? = null
+    var version: String? = null
 
     override fun onCreate() {
         super.onCreate()
 
         VKSdk.initialize(this)
+
+        val info = packageManager.getPackageInfo(packageName, 0)
+        version = info.versionName
     }
 
     fun setCurrentActivity(activity: Activity) {
