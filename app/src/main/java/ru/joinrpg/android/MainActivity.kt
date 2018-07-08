@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.ListView
+import android.widget.TextView
 import com.afollestad.materialdialogs.MaterialDialog
 
 /**
@@ -15,6 +17,20 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val list = findViewById<ListView>(R.id.project_list)
+        val empty = findViewById<TextView>(R.id.project_list_empty)
+
+        list.emptyView = empty
+    }
+
+    override fun onStart() {
+        super.onStart()
+        app().networking.activeProjects { result, map ->
+            if (result) {
+
+            }
+        }
     }
 
     // при создании меню надо создать меню

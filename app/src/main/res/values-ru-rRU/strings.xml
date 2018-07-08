@@ -16,4 +16,5 @@
     <string name="messagebox_no">Нет</string>
     <string name="about_version">Версия:</string>
     <string name="main_menu_about">О программе</string>
+    <string name="projects_list_no_data">Нет доступных проектов</string>
 </resources>

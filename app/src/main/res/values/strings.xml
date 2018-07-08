@@ -19,6 +19,7 @@
     <string name="messagebox_no">No</string>
     <string name="about_version">Version:</string>
     <string name="main_menu_about">About</string>
+    <string name="projects_list_no_data">No projects available</string>
 
 
 </resources>
